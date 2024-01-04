@@ -1,0 +1,15 @@
+/* stylelint-disable declaration-colon-newline-after */
+@import 'theme/variables';
+
+.test-form {
+  border: solid 1px $color-neutral-300;
+  width: 100%;
+
+  &-heading {
+    font: $font-heading-22;
+    font-weight: bold;
+    color: $color-additional-overlay;
+    padding: 0 35px 0;
+    text-align: center;
+  }
+}

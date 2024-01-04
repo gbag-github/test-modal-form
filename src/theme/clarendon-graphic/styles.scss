@@ -1,0 +1,16 @@
+// SCSS mixin to simplify @font-face loading
+@mixin clarendon-graphic($variant, $weight) {
+  @font-face {
+    font-display: block; /* Prevent flicker */
+    font-family: clarendon-graphic;
+    font-weight: $weight;
+    font-style: normal;
+
+    // stylelint-disable-next-line declaration-colon-newline-after
+    src: (url('./clarendon-graphic-#{ $variant }.otf') format('truetype'));
+    src: (url('./clarendon-graphic-#{ $variant }.woff') format('truetype'));
+    src: (url('./clarendon-graphic-#{ $variant }.woff2') format('truetype'));
+  }
+}
+
+@include clarendon-graphic(thin, 300);

@@ -1,0 +1,36 @@
+@import 'theme/variables';
+
+.form {
+  .app-form-toast {
+    border-radius: 12px;
+    font: $font-heading-16;
+    margin-bottom: 23px;
+    padding: 9px;
+    text-align: center;
+  }
+
+  .form-toast-error {
+    background-color: $color-status-error-bg;
+    color: $color-status-error;
+
+    .app-anchor {
+      color: $color-status-error;
+      font: $font-heading-16;
+      text-decoration: underline;
+
+      &:hover {
+        color: $color-status-error;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .app-form-toast-pending {
+    background-color: $color-status-success-bg;
+    color: $color-status-success;
+  }
+
+  .app-form-toast-hide {
+    display: none;
+  }
+}

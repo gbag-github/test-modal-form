@@ -1,0 +1,83 @@
+@import 'theme/variables';
+
+$animation-interval: 1.2s;
+
+.app-button_text {
+  display: block;
+  border: none;
+  cursor: pointer;
+  padding: 10.5px 36px;
+  box-shadow: 0 0 0 2px transparent;
+  font: $font-heading-16;
+  color: $color-neutral-0;
+  transition: transform ease-in-out 0.2s;
+
+
+  &:active {
+    transform: scale(0.95);
+  }
+
+
+  &:focus-visible {
+    outline: 2px solid $color-additional-sea-dark;
+    outline-offset: 2px;
+  }
+
+  &[disabled] {
+    cursor: not-allowed;
+  }
+
+  // Intent
+  &.app-button_text-primary {
+    background-color: $color-additional-sea-dark;
+
+    &:hover,
+    &:active {
+      background-color: $color-additional-sea-dark;
+    }
+
+    &[disabled] {
+      background-color: $color-additional-sea-dark;
+    }
+  }
+
+
+  // Pulse animation
+
+  &.app-button-pulse {
+    position: relative;
+
+    &::before,
+    &::after {
+      animation: button-pulse cubic-bezier(0.42, 0, 0.58, 1) $animation-interval infinite reverse;
+      border: $color-neutral-300 solid 1px;
+      border-radius: 56px;
+      content: '';
+      left: 0;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      opacity: 100%;
+      top: 0;
+      transform: matrix(1.035, 0, 0, 1.39, 0, 0);
+    }
+
+    &::after {
+      animation-delay: $animation-interval;
+    }
+  }
+}
+
+@keyframes button-pulse {
+  0% {
+    transform: matrix(1.035, 0, 0, 1.39, 0, 0);
+    // Using uppercase RGBA() to fix known bug in node-sass: https://github.com/sass/node-sass/issues/2251
+    // Using rgba to adjust opacity of $color-neutral-950
+    border-color: RGBA(214 230 255 / 0%); /* stylelint-disable-line function-name-case */
+  }
+
+  100% {
+    border-color: RGBA(214 230 255 / 100%); /* stylelint-disable-line function-name-case */
+    transform: matrix(1, 0, 0, 1, 0, 0);
+  }
+}

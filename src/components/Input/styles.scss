@@ -1,0 +1,98 @@
+@import 'theme/variables';
+
+.app-input {
+  margin: 0;
+
+  // Input
+  .app-input-control {
+    border: none;
+    background-color: $color-neutral-0;
+    box-shadow: 0 0 0 1px $color-neutral-40;
+    -webkit-appearance: none; /* stylelint-disable-line property-no-vendor-prefix */
+    -moz-appearance: none; /* stylelint-disable-line property-no-vendor-prefix */
+    -webkit-box-shadow: 0 0 0 1px $color-neutral-40; /* stylelint-disable-line property-no-vendor-prefix */
+    -moz-box-shadow: 0 0 0 1px $color-neutral-40; /* stylelint-disable-line property-no-vendor-prefix */
+    color: $color-neutral-700;
+    font: $font-paragraph-16;
+    padding: 9px 12px;
+    text-overflow: ellipsis;
+    position: relative;
+    width: 100%;
+
+    &:hover {
+      border: none;
+      box-shadow: 0 0 0 1px $color-neutral-50;
+      -webkit-appearance: none; /* stylelint-disable-line property-no-vendor-prefix */
+      -moz-appearance: none; /* stylelint-disable-line property-no-vendor-prefix */
+      -webkit-box-shadow: 0 0 0 1px $color-neutral-50; /* stylelint-disable-line property-no-vendor-prefix */
+      -moz-box-shadow: 0 0 0 1px $color-neutral-50; /* stylelint-disable-line property-no-vendor-prefix */
+    }
+  }
+
+  .app-input-control::placeholder {
+    font: $font-paragraph-16;
+    color: $color-neutral-50;
+  }
+
+  // Focus
+  &.app-input-focus {
+    .app-input-control {
+      box-shadow: 0 0 0 1px $color-neutral-50;
+      -webkit-appearance: none; /* stylelint-disable-line property-no-vendor-prefix */
+      -moz-appearance: none; /* stylelint-disable-line property-no-vendor-prefix */
+      -webkit-box-shadow: 0 0 0 1px $color-neutral-50; /* stylelint-disable-line property-no-vendor-prefix */
+      -moz-box-shadow: 0 0 0 1px $color-neutral-50; /* stylelint-disable-line property-no-vendor-prefix */
+    }
+  }
+
+  // Error
+  &.app-input-error {
+    .app-input-control {
+      background-color: unset;
+      box-shadow: 0 0 0 2px $color-status-error;
+      -webkit-appearance: none; /* stylelint-disable-line property-no-vendor-prefix */
+      -moz-appearance: none; /* stylelint-disable-line property-no-vendor-prefix */
+      -webkit-box-shadow: 0 0 0 2px $color-status-error; /* stylelint-disable-line property-no-vendor-prefix */
+      -moz-box-shadow: 0 0 0 2px $color-status-error; /* stylelint-disable-line property-no-vendor-prefix */
+    }
+  }
+
+  // Disabled
+  .app-input-control:disabled {
+    background-color: $color-neutral-10;
+    box-shadow: 0 0 0 1px $color-neutral-20;
+    -webkit-appearance: none; /* stylelint-disable-line property-no-vendor-prefix */
+    -moz-appearance: none; /* stylelint-disable-line property-no-vendor-prefix */
+    -webkit-box-shadow: 0 0 0 1px $color-neutral-20; /* stylelint-disable-line property-no-vendor-prefix */
+    -moz-box-shadow: 0 0 0 1px $color-neutral-20; /* stylelint-disable-line property-no-vendor-prefix */
+    color: $color-neutral-100;
+    cursor: not-allowed;
+  }
+
+  // Label
+  .app-input-label {
+    color: $color-neutral-60;
+    font: $font-paragraph-16;
+    margin-bottom: 8px;
+  }
+
+  // Info
+  .app-input-info {
+    margin-top: 4px;
+    color: $color-neutral-50;
+    font: $font-paragraph-14;
+  }
+
+  // Error
+  .app-input-error {
+    margin-top: 4px;
+    color: $color-status-error;
+    font: $font-paragraph-14;
+  }
+
+  @media (max-width: $mobile) {
+    .app-input-label {
+      margin-bottom: 8px;
+    }
+  }
+}

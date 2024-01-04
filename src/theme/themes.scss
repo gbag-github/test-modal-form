@@ -1,0 +1,43 @@
+// Color palettes
+:root {
+  // Neutral colors
+  --color-neutral-0: #fff;
+  --color-neutral-10: #fafafa;
+  --color-neutral-20: #f0f1f2;
+  --color-neutral-30: #e4e5e6;
+  --color-neutral-40: #d2d5d9;
+  --color-neutral-50: #a5aab0;
+  --color-neutral-60: #55595e;
+  --color-neutral-100: rgb(245 245 245);
+  --color-neutral-200: rgb(229 229 229);
+  --color-neutral-300: rgb(212 212 212);
+  --color-neutral-400: rgb(163 163 163);
+  --color-neutral-500: rgb(115 115 115);
+  --color-neutral-600: rgb(82 82 82);
+  --color-neutral-700: rgb(64 64 64);
+  --color-neutral-800: rgb(38 38 38);
+  --color-neutral-900: rgb(23 23 23);
+  --color-neutral-950: rgb(10 10 10);
+
+
+  // Status colors
+  --color-status-error: #e00909;
+  --color-status-error-bg: #fff4f0;
+  --color-status-success: #008542;
+  --color-status-success-bg: #e9ffd7;
+  --color-status-warning: #fef9e7;
+
+  // Box shadows
+  // Using uppercase RGBA() to fix known bug in node-sass: https://github.com/sass/node-sass/issues/2251
+  --color-shadow-1: 0 4px 16px RGBA(37 81 184 / 8%); /* stylelint-disable-line function-name-case */
+  --color-shadow-2: 0 8px 24px RGBA(37 81 184 / 10%); /* stylelint-disable-line function-name-case */
+
+  // Define color scheme for OS
+  color-scheme: light;
+}
+
+:root[data-theme='app-dark'] {
+
+  // Define color scheme for OS
+  color-scheme: dark;
+}

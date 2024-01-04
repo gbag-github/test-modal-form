@@ -1,0 +1,111 @@
+@import 'theme/variables';
+
+.modal-test_form {
+  padding-top: 25px;
+
+  .modal_body_dialog-heading {
+    color: $color-neutral-900;
+  }
+
+  .modal-test_form-heading {
+    padding: 40px 0 30px 40px;
+    border-top: solid 1px $color-neutral-300;
+    margin: 15px -40px 0 -40px;
+    font-weight: bolder;
+  }
+
+  .modal-test_form_input-group {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .modal-test_form_button-group-top {
+    .modal-test_form_input {
+      width: 80%;
+      margin-bottom: 10px;
+    }
+  }
+
+  .modal-test_form_button-group {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+
+    .modal-test_form_button {
+      width: 120px;
+    }
+  }
+
+
+  .modal-test_form-middle-box {
+    border: solid 1px $color-neutral-300;
+    margin: 25px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    .modal-test_form-middle-box-left-inputs,
+    .modal-test_form-middle-box-right-inputs {
+      padding: 20px;
+
+      .title {
+        font-weight: 400;
+        padding: 0;
+        margin: -15px 0 15px -15px;
+      }
+
+      .modal-test_form_input-group {
+        display: grid;
+        grid-template-columns:  1fr 1fr;
+
+      }
+
+    }
+
+    .modal-test_form-middle-box-right-inputs {
+      border-left: solid 1px $color-neutral-300;
+    }
+  }
+
+  .modal-test_form_input-description {
+    margin: 20px 0;
+
+    .title {
+      font-size: 16px;
+      font-weight: 400;
+      padding: 0;
+    }
+
+    .modal-test_form_input {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 475px) {
+    .modal-test_form_input-group,
+    .modal-test_form-middle-box {
+      display: block;
+    }
+
+    .modal-test_form_button-group-top {
+      .modal-test_form_input {
+        width: 100%;
+      }
+    }
+    .modal-test_form-middle-box {
+      .modal-test_form-middle-box-right-inputs {
+        border: 0;
+        border-top: solid 1px $color-neutral-300;
+      }
+
+      .modal-test_form-middle-box-left-inputs,
+      .modal-test_form-middle-box-right-inputs {
+        .modal-test_form_input-group {
+          display: block;
+        }
+      }
+    }
+
+  }
+}
+

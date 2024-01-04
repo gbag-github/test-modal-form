@@ -1,0 +1,94 @@
+/* stylelint-disable scss/operator-no-unspaced  */
+/* stylelint-disable scss/dollar-variable-pattern */
+
+// Media Queries
+$tablet-landscape: 1024px;
+$tablet: 940px;
+$mobile: 720px;
+$tablet-breakpoint: 1199px;
+
+// Colors - Neutral
+$color-neutral-0: var(--color-neutral-0);
+$color-neutral-10: var(--color-neutral-10);
+$color-neutral-20: var(--color-neutral-20);
+$color-neutral-30: var(--color-neutral-30);
+$color-neutral-40: var(--color-neutral-40);
+$color-neutral-50: var(--color-neutral-50);
+$color-neutral-60: var(--color-neutral-60);
+$color-neutral-100: var(--color-neutral-100);
+$color-neutral-200: var(--color-neutral-200);
+$color-neutral-300: var(--color-neutral-300);
+$color-neutral-400: var(--color-neutral-400);
+$color-neutral-500: var(--color-neutral-500);
+$color-neutral-600: var(--color-neutral-600);
+$color-neutral-700: var(--color-neutral-700);
+$color-neutral-800: var(--color-neutral-800);
+$color-neutral-900: var(--color-neutral-900);
+$color-neutral-900: var(--color-neutral-900);
+$color-neutral-950: var(--color-neutral-950);
+
+
+// Colors - Service
+$color-status-error: var(--color-status-error);
+$color-status-error-bg: var(--color-status-error-bg);
+$color-status-success: var(--color-status-success);
+$color-status-success-bg: var(--color-status-success-bg);
+$color-status-warning: var(--color-status-warning);
+
+// Colors - Additional
+$color-additional-aqua-dark: #00a399;
+$color-additional-aqua-light: #d9fcf1;
+$color-additional-ultra-dark: #1c3deb;
+$color-additional-ultra-light: #e0edff;
+$color-additional-purple-dark: #9909e0;
+$color-additional-purple-light: #f7e5ff;
+$color-additional-sea-dark: #098ae0;
+$color-additional-sea-light: #e0f9ff;
+$color-additional-brand-orange: #ff8c5a;
+$color-additional-brand-beige: #fefbf2;
+$color-additional-grass-green: #40b267;
+$color-additional-ghost-white: #f7f6f5;
+$color-additional-brand-green: #d2ffaf;
+$color-additional-salad-green: #acc700;
+$color-additional-yellow: #f7cb19;
+$color-additional-overlay: #070b14;
+$color-additional-paypal-yellow: #ffc439;
+$color-additional-paypal-yellow-dark: #e9ac1b;
+
+// Fonts - paragraph
+$font-paragraph-22: 400 22px/28px basel-grotesk, sans-serif;
+$font-paragraph-18: 400 18px/24px basel-grotesk, sans-serif;
+$font-paragraph-16: 400 16px/22px basel-grotesk, sans-serif;
+$font-paragraph-14: 400 14px/18px basel-grotesk, sans-serif;
+$font-paragraph-12: 400 12px/14px basel-grotesk, sans-serif;
+
+// Fonts - heading
+$font-heading-64: 300 64px/80px clarendon-graphic, serif;
+$font-heading-58: 100 58px/67px clarendon-graphic, serif;
+$font-heading-52: 500 52px/56px basel-grotesk, serif;
+$font-heading-48: 300 48px/64px clarendon-graphic, serif;
+$font-heading-46: 500 46px/56px basel-grotesk, sans-serif;
+$font-heading-44: 500 44px/54px basel-grotesk, serif;
+$font-heading-40-alt: 300 40px/54px clarendon-graphic, serif;
+$font-heading-40: 500 40px/54px basel-grotesk, sans-serif;
+$font-heading-32: 500 32px/44px basel-grotesk, sans-serif;
+$font-heading-26: 500 26px/32px basel-grotesk, sans-serif;
+$font-heading-22: 500 22px/28px basel-grotesk, sans-serif;
+$font-heading-18: 500 18px/24px basel-grotesk, sans-serif;
+$font-heading-16: 500 16px/22px basel-grotesk, sans-serif;
+$font-heading-14: 500 14px/18px basel-grotesk, sans-serif;
+$font-heading-12: 500 12px/14px basel-grotesk, sans-serif;
+$font-heading-11: 600 11px/14px basel-grotesk, sans-serif;
+
+// Box shadows
+$color-shadow-1: var(--color-shadow-1);
+$color-shadow-2: var(--color-shadow-2);
+$color-shadow-3: var(--color-shadow-3);
+
+// Misc
+$offset-home-page-cards-desktop: -300px;
+$offset-home-page-cards-background-desktop: 300px;
+$offset-home-page-cards-mobile: -85px;
+$offset-home-page-gradient-mobile: 85px;
+
+

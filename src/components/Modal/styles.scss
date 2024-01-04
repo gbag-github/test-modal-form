@@ -1,0 +1,88 @@
+@import 'theme/variables';
+
+.app-modal {
+  // Core
+  .modal-backdrop {
+    align-items: center;
+
+    background-color: RGBA(7 11 20 / 70%); /* stylelint-disable-line function-name-case */
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    left: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+  }
+
+  .modal-container {
+    margin: 32px;
+    position: relative;
+  }
+
+  .modal-icon-container {
+    align-items: center;
+    background: RGBA(255 255 255 / 90%);
+    border-radius: 50%;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    width: 40px;
+    position: absolute;
+    right: 25px;
+    top: 6px;
+    font: $font-heading-40;
+
+    z-index: 101;
+
+    &:hover {
+      cursor: pointer;
+      background: $color-neutral-20;
+    }
+  }
+
+  .modal-content {
+    background-color: $color-neutral-0;
+    overflow-y: auto;
+    max-height: 672px;
+    padding: 48px;
+    width: 795px;
+    z-index: 100;
+  }
+
+  // Prevent ButtonIcon from being cut off via overflow hidden
+  .app-dropdown-nav {
+    right: 0;
+  }
+
+
+  // Media queries - mobile screens
+  @media (max-width: 719px) {
+    // Core
+    .modal-content {
+      padding: 32px;
+    }
+  }
+
+  @media (max-width: 475px) {
+    // Core
+    .modal-container {
+      margin: 16px;
+    }
+
+    .modal-content {
+      padding: 20px;
+      width: 100%;
+    }
+  }
+
+  // Media queries - desktop screens
+  @media (max-height: 799px) and (min-width: $mobile) {
+    // Core
+    .modal-backdrop {
+      align-items: baseline;
+    }
+  }
+}

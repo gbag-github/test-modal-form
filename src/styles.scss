@@ -1,0 +1,46 @@
+ @import 'theme/variables';
+
+html,
+body,
+#root {
+  height: 100%;
+  min-height: 100vh;
+}
+
+html {
+  &.modal-lock-scroll,
+  &.mobile_nav-lock-scroll {
+    overflow: hidden;
+  }
+}
+
+body {
+  box-sizing: border-box;
+  font-family: basel-grotesk, sans-serif;
+  color: $color-neutral-60;
+  margin: 0;
+  overscroll-behavior-y: none;
+  padding: 0;
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+// Remove default outline for inputs on some browsers
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+}

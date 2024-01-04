@@ -1,0 +1,40 @@
+@import 'theme/variables';
+
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .loading-spinner {
+    margin: 0 auto;
+    animation: spin 1s linear infinite;
+  }
+
+  .loading-heading {
+    margin-top: 25px;
+    font: $font-heading-16;
+    font-weight: 600;
+  }
+
+  &.loading-centered {
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: translateX(-50%) translateY(50%);
+  }
+}
